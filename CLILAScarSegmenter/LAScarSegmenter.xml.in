@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<executable>
+  <category>
+    Segmentation
+  </category>
+  <title>
+    Left Atrial Scar Segmentation
+  </title>
+  <description>
+    Segmentation of scar tissue
+  </description>
+  <version>1.0</version>
+  <documentation-url>
+  http://www.slicer.org/slicerWiki/index.php/Documentation/Nightly/Modules/LAScarSegmenter
+  </documentation-url>
+  <license></license>
+  <contributor>
+   LiangJia Zhu (UAB), Yi Gao (BWH), Josh Cates (Utah), Alan Morris (Utah), Danny Perry (Utah), Greg Gardner (Utah), Rob MacLeod (Utah), Allen Tannenbaum (UAB)
+  </contributor>
+  <acknowledgements>
+    This work is part of the National Alliance for Medical Image Computing (NAMIC), funded by the National Institutes of Health
+  </acknowledgements>
+
+  <parameters>
+    <label>Parameters</label>
+    <description>Input/output parameters</description>
+
+    <image>
+      <name>originalImageFileName</name>
+      <longflag>originalImageFileName</longflag> 
+      <label>Original Image</label>
+      <channel>input</channel>
+      <description>Original image to be segmented</description>
+    </image>
+
+    <image>
+      <name>labelImageFileName</name>
+      <label>Endocardium Label Image</label>
+      <channel>input</channel>
+      <index>1</index>
+      <description>Label image for blood pool</description>
+    </image>
+
+    <image type="label">
+      <name>segmentedImageFileName</name>
+      <longflag>segmentedImageFileName</longflag> 
+      <label>Segmentation Result</label>
+      <channel>output</channel>
+      <description>Segmented image</description>
+    </image>
+  </parameters>
+
+</executable>
