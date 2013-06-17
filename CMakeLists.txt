@@ -4,7 +4,7 @@ project(LAScarSegmenter)
 
 #-----------------------------------------------------------------------------
 set(EXTENSION_HOMEPAGE "http://www.slicer.org/slicerWiki/index.php/Documentation/Nightly/Modules/LAScarSegmenter")
-set(EXTENSION_CATEGORY "Examples")
+set(EXTENSION_CATEGORY "Segmentation")
 set(EXTENSION_STATUS "Beta")
 set(EXTENSION_CONTRIBUTORS "LiangJia Zhu (UAB), Yi Gao (BWH), Josh Cates (Utah), Alan Morris (Utah), Danny Perry (Utah), Greg Gardner (Utah), Rob MacLeod (Utah), Allen Tannenbaum (UAB) ")
 set(EXTENSION_DESCRIPTION "This is an module performing the LA scar segmentation")

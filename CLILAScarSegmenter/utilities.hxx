@@ -154,8 +154,8 @@ typename outputType::Pointer
 ExtractXORImage(typename inputType1::Pointer input1, typename inputType2::Pointer input2) {
 
         // Binarize masks
-        input1 = BinThreshold<inputType1, inputType1>(input1, 1, 10000);
-        input2 = BinThreshold<inputType2, inputType2>(input2,  1, 10000);
+        input1 = BinThreshold<inputType1, inputType1>(input1, 1, 255);
+        input2 = BinThreshold<inputType2, inputType2>(input2,  1, 255);
 
         typedef itk::XorImageFilter <outputType> XorImageFilterType;
         typename XorImageFilterType::Pointer xorFilter = XorImageFilterType::New();
