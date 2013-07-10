@@ -11,11 +11,11 @@
   </description>
   <version>1.0</version>
   <documentation-url>
-  http://www.slicer.org/slicerWiki/index.php/Documentation/Nightly/Modules/LAScarSegmenter
+  http://www.slicer.org/slicerWiki/index.php/Documentation/Nightly/Extensions/LAScarSegmenter
   </documentation-url>
   <license></license>
   <contributor>
-   LiangJia Zhu (UAB), Yi Gao (BWH), Josh Cates (Utah), Alan Morris (Utah), Danny Perry (Utah), Greg Gardner (Utah), Rob MacLeod (Utah), Allen Tannenbaum (UAB)
+   Liangjia Zhu (UAB), Yi Gao (BWH), Josh Cates (Utah), Alan Morris (Utah), Danny Perry (Utah), Greg Gardner (Utah), Rob MacLeod (Utah), Allen Tannenbaum (UAB)
   </contributor>
   <acknowledgements>
     This work is part of the National Alliance for Medical Image Computing (NAMIC), funded by the National Institutes of Health
