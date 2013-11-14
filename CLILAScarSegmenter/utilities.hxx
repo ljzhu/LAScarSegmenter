@@ -25,6 +25,8 @@
 #include "itkConnectedComponentImageFilter.h"
 #include "itkRelabelComponentImageFilter.h"
 
+#include <math.h>
+#include <stdlib.h>
 #include <numeric>
 #include <csignal>
 
@@ -95,7 +97,7 @@ ResampleImage(typename InputImageType::Pointer imIn, typename InputImageType::Sp
     outSpacing = sampleSpacing;
 
     for(unsigned int i = 0; i < 3; i++) {
-        outSize[i] = round(inSpacing[i]*inSize[i]/outSpacing[i]);
+        outSize[i] = std::floor(inSpacing[i]*inSize[i]/outSpacing[i]+0.5);
     }
 
     typedef itk::ResampleImageFilter< InputImageType, OutputImageType >    ResampleFilterType;
